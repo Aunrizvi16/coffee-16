@@ -1,0 +1,6 @@
+{
+  "name": "Aura Artisan — Floating Coffee Beans 3D",
+  "description": "A cinematic, full-window Three.js scene of procedurally modelled floating roasted Arabica coffee beans with realistic PBR materials, depth of field, and scroll-responsive tumbling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    background-color: #1a110b;
+    color: #e6dacb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle typography accents */
+.font-serif-luxury {
+  font-family: "Georgia", "Cambria", "Times New Roman", serif;
+  letter-spacing: -0.02em;
+}
+
+.text-gold-accent {
+  color: #d4a373;
+}
+
+.text-subtle-brown {
+  color: #9c8270;
+}
+
+.border-coffee-line {
+  border-color: rgba(212, 163, 115, 0.15);
+}

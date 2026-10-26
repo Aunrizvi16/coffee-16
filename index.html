@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Artisan — Floating Coffee Beans 3D</title>
+    <meta
+      name="description"
+      content="A cinematic, full-window Three.js scene of procedurally modelled floating roasted Arabica coffee beans with realistic PBR materials, depth of field, and scroll-responsive tumbling."
+    />
+    <meta property="og:title" content="Aura Artisan — Floating Coffee Beans 3D" />
+    <meta
+      property="og:description"
+      content="A cinematic, full-window Three.js scene of procedurally modelled floating roasted Arabica coffee beans with realistic PBR materials, depth of field, and scroll-responsive tumbling."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-[#1a110b] text-[#e6dacb] min-h-screen relative selection:bg-[#d4a373] selection:text-[#1a110b]">
+    <!-- Three.js Canvas Layer: full window, transparent background, subtle background layer -->
+    <canvas
+      id="beans-canvas"
+      class="fixed inset-0 w-full h-full pointer-events-none z-0"
+      aria-hidden="true"
+    ></canvas>
+
+    <!-- Editorial Specialty Coffee Website Layer (Dark #1a110b Background) -->
+    <main class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 py-16 flex flex-col gap-36 pointer-events-auto">
+      <!-- Header -->
+      <header class="flex justify-between items-center border-b border-coffee-line pb-6">
+        <div class="flex items-center gap-3">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-[#d4a373]"></span>
+          <span class="text-xs tracking-[0.28em] uppercase text-[#d4a373] font-medium">Aura Artisan Atelier</span>
+        </div>
+        <div class="text-xs tracking-[0.2em] uppercase text-subtle-brown">
+          Harvest 2026 • Lot 08
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="flex flex-col gap-8 max-w-3xl pt-8">
+        <div class="text-xs font-mono uppercase tracking-[0.3em] text-[#d4a373]">
+          High Elevation Ethiopian Arabica
+        </div>
+        <h1 class="text-5xl md:text-7xl font-serif-luxury font-normal leading-[1.08] text-[#f4eee6]">
+          Slow roasted under gentle flame.
+        </h1>
+        <p class="text-lg md:text-xl text-[#b8a695] font-light leading-relaxed max-w-2xl">
+          Cultivated at 2,150 meters along the misty volcanic slopes of Gedeo. Hand-harvested, heirloom Arabica beans roasted with restrained convection to preserve bright floral aromatics and a luminous cacao finish.
+        </p>
+        <div class="pt-4 flex items-center gap-8 text-xs tracking-[0.2em] uppercase text-subtle-brown">
+          <span>Density: 740 g/L</span>
+          <span class="w-1 h-1 rounded-full bg-[#d4a373]/40"></span>
+          <span>Varietal: Heirloom Typica</span>
+          <span class="w-1 h-1 rounded-full bg-[#d4a373]/40"></span>
+          <span>Moisture: 10.4%</span>
+        </div>
+      </section>
+
+      <!-- Section I: Terroir & Density -->
+      <section class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-coffee-line pt-16">
+        <div class="md:col-span-4">
+          <span class="text-xs font-mono text-[#d4a373] tracking-[0.25em] uppercase block mb-3">01 / Botanical Origin</span>
+          <h2 class="text-2xl md:text-3xl font-serif-luxury text-[#f4eee6]">High altitude micro-climate</h2>
+        </div>
+        <div class="md:col-span-8 flex flex-col gap-6 text-[#b8a695] leading-relaxed">
+          <p>
+            The prolonged maturation period at high elevations condenses essential sugars and chlorogenic acids within the bean structure. The physical bean tissue expands uniformly during the first crack, resulting in an exceptionally balanced cellular density that allows slow, gentle caramelization without surface scorching.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-4 border-t border-coffee-line/60">
+            <div>
+              <div class="text-2xl font-serif-luxury text-[#f4eee6]">2,150 m</div>
+              <div class="text-xs text-subtle-brown uppercase tracking-wider mt-1">Growth Altitude</div>
+            </div>
+            <div>
+              <div class="text-2xl font-serif-luxury text-[#f4eee6]">72 hrs</div>
+              <div class="text-xs text-subtle-brown uppercase tracking-wider mt-1">Washed Ferment</div>
+            </div>
+            <div>
+              <div class="text-2xl font-serif-luxury text-[#f4eee6]">14 Days</div>
+              <div class="text-xs text-subtle-brown uppercase tracking-wider mt-1">African Bed Drying</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section II: The Roast Curve -->
+      <section class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-coffee-line pt-16">
+        <div class="md:col-span-4">
+          <span class="text-xs font-mono text-[#d4a373] tracking-[0.25em] uppercase block mb-3">02 / The Thermal Curve</span>
+          <h2 class="text-2xl md:text-3xl font-serif-luxury text-[#f4eee6]">The delicate Maillard transition</h2>
+        </div>
+        <div class="md:col-span-8 flex flex-col gap-6 text-[#b8a695] leading-relaxed">
+          <p>
+            Our cast iron drum roast balances radiant heat with turbulent hot air. We extend the drying phase to 4 minutes and 30 seconds before guiding the beans into the Maillard reaction, developing complex volatile terpenes without breaking the delicate essential oils that coat each bean’s cellular pore.
+          </p>
+          <div class="p-6 rounded-lg bg-[#22170f]/70 border border-coffee-line/60 flex flex-col gap-3">
+            <div class="text-xs uppercase tracking-[0.2em] text-[#d4a373]">Cupping Notes</div>
+            <div class="text-xl font-serif-luxury text-[#f4eee6]">Night Jasmine • Candied Bergamot • Dark Cacao Nibs</div>
+            <div class="text-sm text-subtle-brown">
+              Clean citric acidity with a lingering silky body and caramelized honey sweetness.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section III: Extraction Ratio -->
+      <section class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-coffee-line pt-16">
+        <div class="md:col-span-4">
+          <span class="text-xs font-mono text-[#d4a373] tracking-[0.25em] uppercase block mb-3">03 / Atelier Protocol</span>
+          <h2 class="text-2xl md:text-3xl font-serif-luxury text-[#f4eee6]">Brewing specifications</h2>
+        </div>
+        <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8 text-[#b8a695]">
+          <div class="flex flex-col gap-2">
+            <span class="text-xs uppercase tracking-widest text-[#d4a373]">Pour-Over (V60)</span>
+            <div class="text-xl font-serif-luxury text-[#f4eee6]">1 : 16.5 Ratio</div>
+            <p class="text-sm text-subtle-brown">
+              20g coffee to 330g water at 93.5°C. Total brew time 2:45 min. Medium-fine particle distribution.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="text-xs uppercase tracking-widest text-[#d4a373]">Espresso Pull</span>
+            <div class="text-xl font-serif-luxury text-[#f4eee6]">1 : 2.2 Ratio</div>
+            <p class="text-sm text-subtle-brown">
+              18.5g dry dose, 41g liquid yield in 29 seconds. 9 bar profile with 4 second pre-infusion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="border-t border-coffee-line pt-12 pb-24 flex flex-col sm:flex-row justify-between items-center gap-6 text-xs text-subtle-brown tracking-widest uppercase">
+        <div>© 2026 Aura Artisan Coffee Atelier</div>
+        <div>Roasted in small batches • Pure Arabica Selection</div>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
